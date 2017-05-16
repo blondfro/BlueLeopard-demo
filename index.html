@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+<header id="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class=" navbar-left" href="#home">
+                <a class="navbar-left" href="#top">
                     <img class="img-responsive" src="images/logo.png"/>
                 </a>
             </div>
@@ -31,7 +31,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li style="color: #AC8C47"><a href="#menu" class="hidden-xs" >Menu</a></li>
+                    <li><a href="#top" class="hidden-xs">Home</a></li>
+                    <li><a href="#top" class="visible-xs" data-toggle="collapse"
+                           data-target=".navbar-collapse">Home</a></li>
+                    <li><a href="#menu" class="hidden-xs">Menu</a></li>
                     <li><a href="#menu" class="visible-xs" data-toggle="collapse"
                            data-target=".navbar-collapse">Menu</a></li>
                     <li><a href="#entertainment" class="hidden-xs">Entertainment</a></li>
@@ -46,116 +49,121 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
-<div class="col-md-12 container">
-<section id="home">
-    <div class="landing">
-        <h1>The Blue Leopard</h1>
-        <h2>A Classic Pub with a Modern Approach</h2>
-        <p>The Blue Leopard is the place to come for a relaxed pub atmosphere with modern decor. Our
-            drinks list that boasts a large range of European lagers and a superb wine selection.
-            We've been informed that our attic is haunted so in honor of our supernatural guests, we
-            have a Watch Party every Saturday night from 7pm until close. Live music seven nights a
-            week, and never a cover charge for entry.
+
+
+<div class="col-md-12 row container">
+    <section id="home">
+        <div class="landing">
+            <h1>The Blue Leopard</h1>
+            <h2>A Classic Pub with a Modern Approach</h2>
+            <p>The Blue Leopard is the place to come for a relaxed pub atmosphere with modern decor. Our
+                drinks list that boasts a large range of European lagers and a superb wine selection.
+                We've been informed that our attic is haunted so in honor of our supernatural guests, we
+                have a Watch Party every Saturday night from 7pm until close. Live music seven nights a
+                week, and never a cover charge for entry.
+            </p>
+        </div>
+    </section>
+    <hr/>
+
+    <section id="menu" class="row fill-screen">
+        <h3>Menu</h3>
+        <p class="section-description">Always prepared daily from fresh ingredients, you won't be disappointed by our
+            simple but delicious selection of pub fare.
         </p>
-    </div>
-</section>
-<hr/>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="images/starters/starters-img.jpg" width="400"/>
+            <p class="hero-label">Starters</p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="images/entrees/entree-img.jpg" width="400"/>
+            <p class="hero-label">Entrees</p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="images/desserts/desserts-img.jpg" width="400"/>
+            <p class="hero-label">Deserts</p>
+        </div>
+        <div class="col-sm-12 text-center">
+            <p class="btn btn-default">
+                <a href="menu.html">Our Full Menu</a>
+            </p>
+        </div>
 
-<section id="menu">
-    <h3>Menu</h3>
-    <p>Always prepared daily from fresh ingredients, you won't be disappointed by our simple but delicious selection of pub fare.
-    </p>
-    <div class="col-md-4">
-        <img class="img-responsive" src="images/starters/appe.jpg"
-             height="743" width="1112"/>
-        <p>Starters</p>
-    </div>
-    <div class="col-md-4">
-        <img class="img-responsive" src="images/entrees/dinner-special.jpg"
-             height="334" width="500"/>
-        <p>Entrees</p>
-    </div>
-    <div class="col-md-4">
-        <img src="images/desserts/chocolate-thunder-down-under-itok=WlYMtdbi.jpg"
-             height="413" width="619"/>
-        <p>Deserts</p>
-    </div>
-    <p class="btn btn-default">
-        <a href="menu.html">View More About Our Menu</a>
-    </p>
-</section>
-<hr/>
+    </section>
+    <hr/>
 
-<section id="entertainment">
-    <h3>Entertainment</h3>
-    <p>Each night we strive to provide an variety of atmospheres.  From Music to Comedy to...  Well
-        You!
-    </p>
-    <div class="col-md-4">
-        <img class="img-responsive" src="images/live-music/shutterstock_177758375.jpg"
-             height="743" width="1112"/>
-        <p>Music</p>
-    </div>
-    <div class="col-md-4">
+    <section id="entertainment" class="row fill-screen">
+        <h3>Entertainment</h3>
+        <p class="section-description">Each night we strive to provide an variety of atmospheres. From Music to Comedy
+            to... Well
+            You!
+        </p>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="images/live-music/live-music-img.jpg" width="400"/>
+            <p class="hero-label">Music</p>
+        </div>
+        <div class="col-md-4">
 
-        <img class="img-responsive" src="images/live-comedy/c700x420.jpg"
-             height="334" width="500"/>
-        <p>Comedy</p>
-    </div>
-    <div class="col-md-4">
-        <img src="images/open-mic/karaoke-revolution.jpg"
-             height="413" width="619"/>
-        <p>karaoke</p>
-    </div>
-    <p class="btn btn-default">
-        <a href="menu.html">View More About Our Menu</a>
-    </p>
-    <ul>
-        <li>Basement Dreams &mdash; 10.12 at 8:00pm</li>
-        <li>Not Your Mum's Socks &mdash; 10.13 at 8:00pm</li>
-        <li>The Dead Beats &mdash; 10.14 at 8:00pm</li>
-        <li>East High Tappers &mdash; 10.15 at 6:00pm</li>
-        <li>Johnny and the Meerkats &mdash; 10.17 at 10:00pm</li>
-        <li>Celtic Wind &mdash; 10.18 at 10:00pm</li>
-    </ul>
-    <p class="btn btn-default">
-        <a href="entertainment.html">View More About Our Entertainment</a>
-    </p>
-</section>
-<hr/>
+            <img class="img-responsive img-rounded" src="images/live-comedy/comedy-img.jpg" width="400"/>
+            <p class="hero-label">Comedy</p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-responsive img-rounded" src="images/open-mic/karaoke-img.jpg" width="400"/>
+            <p class="hero-label">karaoke</p>
+        </div>
 
-<section id="about">
-    <h3>Location</h3>
-    <p>The Blue Leopard is located near the riverfront at 981 Leopard Avenue, across from Fulcher Bridge. Limited parking is available.</p>
-    <div class="col-md-4">
-        <img class="img-responsive" src="images/about-options/Locations.png">
-        <p>Location</p>
-    </div>
-    <div class="col-md-4">
+        <div class="col-md-12 text-center">
+            <p class="btn btn-default">
+                <a href="entertainment.html">Our Entertainment</a>
+            </p>
+        </div>
 
-        <img class="img-responsive" src="images/about-options/clock.jpg"/>
-        <p>Hours</p>
-    </div>
-    <div class="col-md-4">
+    </section>
+    <hr/>
 
-        <img class="img-responsive" src="images/about-options/contact_black+phone02.jpg"
-             height="364" width="716"/>
-        <p>Contact</p>
-    </div>
-    <p class="btn btn-default">
-        <a href="about.html">View More About Us</a>
-    </p>
-</section>
-<hr/>
+    <section id="about" class="row fill-screen">
+        <h3>About Us</h3>
+        <p class="section-description">The Blue Leopard is located near the riverfront at 981 Leopard Avenue, across
+            from Fulcher Bridge. Limited parking is available.</p>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" src="images/about-options/location-img.jpg" width="400"/>
+            <p class="hero-label">Location</p>
+        </div>
+        <div class="col-md-4">
+
+            <img class="img-responsive img-rounded" src="images/about-options/hours-img.jpg" width="400"/>
+            <p class="hero-label">Hours</p>
+        </div>
+        <div class="col-md-4">
+
+            <img class="img-responsive img-rounded" src="images/about-options/contact-img.jpg" width="400"/>
+            <p class="hero-label">Contact</p>
+        </div>
+        <div class="col-sm-12 text-center">
+            <p class="btn btn-default">
+                <a href="about.html">About Us</a>
+            </p>
+        </div>
+
+    </section>
+    <hr/>
 
 </div>
+
 <footer>
-    <h4>CONTACT US</h4>
-    <p>1.555.678.9876</p>
-    <p>contact@theblueleopa.rd</p>
+    <div class="contact-info">
+        <h4>CONTACT US</h4>
+        <p>1.555.678.9876</p>
+        <p>contact@theblueleopa.rd</p>
+    </div>
 </footer>
 
 <script src="js/jquery-3.2.0.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/scrolling.js"></script>
+
 </body>
 </html>
